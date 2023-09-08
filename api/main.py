@@ -61,4 +61,6 @@ def retrieve():
             return "Error; missing a vital credential"
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    #app.run(debug=False)
+    from werkzeug.serving import run_simple
+    run_simple('localhost', 5000, app,use_reloader=True)
