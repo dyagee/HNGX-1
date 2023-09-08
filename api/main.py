@@ -50,8 +50,8 @@ def retrieve():
                 "current_day": wkday,
                 "utc_time": utc_time + 'Z',
                 "track": track_,
-                "github_file_url": repo,
-                "github_repo_url": file,
+                "github_file_url": file,
+                "github_repo_url": repo,
                 "status_code": 200
                 }
                 return jsonify(data)
