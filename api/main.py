@@ -30,7 +30,7 @@ track_ = os.getenv("TRACK")
 def index():
     return '''<h1>This is 2023 HNGx stage 1 project</h1><br> <p>Created by Agee Aondo @dyagee github repo </p>'''
 
-@app.route("/api/v1", methods=["GET"])
+@app.route("/api", methods=["GET"])
 def retrieve():
     if request.method == "POST":
         return "<h1>Out of Bound</1>",400
