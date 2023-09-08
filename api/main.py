@@ -48,7 +48,7 @@ def retrieve():
                 data = {
                 "slack_name": slack_,
                 "current_day": wkday,
-                "utc_time": utc_time + dt.tzname(),
+                "utc_time": utc_time + 'Z',
                 "track": track_,
                 "github_file_url": repo,
                 "github_repo_url": file,
